@@ -99,12 +99,11 @@ h3.tittle_left {
     height:184px ; 
     display:flex;
     flex-direction: row;
-    align-items: center;  
+    text-align: center;
+    margin: 25px;
 }
 
 .icone {
-  
-   text-align: center;
     border: 3px solid beige;
     box-shadow: 1px 1px 10px;
     border-radius: 50%;
@@ -177,7 +176,7 @@ h3.tittle_left {
 } 
    
 /*------media_query_petit_ecran --------*/
-@media all and (max-width: 768px)
+@media all and (max-width: 992px)
 {
     #container {
         

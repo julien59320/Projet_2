@@ -107,8 +107,8 @@ h3.tittle_left {
     border: 3px solid beige;
     box-shadow: 1px 1px 10px;
     border-radius: 50%;
+    padding: 3%;
     margin: auto;
-    padding: 3%;   
 }
 /*-------------Partie_de_droite------------------*/
 #right_part {
@@ -166,9 +166,11 @@ h3.tittle_left {
 }
 /*----recommandations---*/
 .recommandations {
-    display: flex;
+    display:flex;
+    flex-direction: row;
     padding-top: 40px;
-    padding-bottom: 30px
+    margin-bottom: 10px
+
 }
 
 .seconde_section {
@@ -225,5 +227,13 @@ h3.tittle_left {
     
     section {
         height: auto
+    }
+    .recommandations {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+         }
+    .primary_section {
+        margin-bottom: 25px
     }
    

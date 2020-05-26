@@ -1,0 +1,230 @@
+/*-----general-------*/
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: FiraSans-Book;
+    src: url(style/FiraSans-Book.otf);
+}
+p{
+    margin-top: 4px;
+}
+h2{
+    font-size: 22px;
+}
+h1 {
+    font-size: 44px;
+}
+strong {
+    color: rgb(98,98,98)
+}
+h3{
+    font-size: 22px;
+    padding-bottom: 6px
+}
+h4 {
+    opacity: 0.7;
+}
+body {
+    max-width: 1190px;
+    margin: auto;
+    font-family:FiraSans-Book ;    
+}
+/*-----ceci_est_mon_contenaire----------*/
+#container {
+    display: flex;
+    flex-direction: row;
+}
+/*-------------Partie_de_gauche------------------*/
+#left_part {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background: rgb(98, 98, 98);
+    border: 1px black solid;
+    width: 38%;
+}
+/*-------------photo-----------*/
+#photo {
+    text-align: center;
+    height: 328px;
+}
+
+img {
+    width:55%;
+    margin-top: 68px;
+    margin-bottom: 45px;
+    height: 216px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px 10px beige ;
+}
+
+section {
+    height: 720px;
+}
+
+.adress {
+    height: 344px;
+    margin-top: 12px;
+}
+
+li {
+    margin-top: 24px;
+    list-style-type: none;
+}
+
+em {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+h3.tittle_left {
+    border: 1px solid black;
+    background-color: beige;
+    color: rgb(98, 98, 98);
+    text-align: center;
+    height: 47px;
+    font-size: 40px;
+}
+
+.description_left {
+    margin: 4%;
+    width: 92%;
+    word-wrap: break-word
+}
+
+#icones {
+    height:184px ; 
+    display:flex;
+    flex-direction: row;
+    align-items: center;  
+}
+
+.icone {
+  
+   text-align: center;
+    border: 3px solid beige;
+    box-shadow: 1px 1px 10px;
+    border-radius: 50%;
+    margin: auto;
+    padding: 3%;   
+}
+/*-------------Partie_de_droite------------------*/
+#right_part {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding-left: 5.37%;
+    background-color: beige;
+   
+
+}
+/*----------Entête---------*/
+#name {
+    display: flex;
+    flex-direction: column;
+    margin-top: 62px;
+    margin-bottom: 80px;
+    margin-right: 11.9%;
+}
+/*------partie_formation/expreriences----------*/
+#icones_right {
+    border-bottom: 2px solid grey;
+    display:flex;
+    font-size: 40px;
+    margin-right: 37px;
+    opacity: 0.6;
+    padding-bottom: 5px;
+}
+#tittle_right {
+    display: flex;
+    margin-left: 37px;
+}
+
+#main_right {
+    display: flex;
+}
+
+
+.date {
+    height: 80px;
+    margin-top: 28px;
+    width: 30%;
+}
+
+.description_right {
+    margin-top: 40px;
+    margin-left: 4%;
+    margin-right: 6%;
+    text-align: left;
+    width: 60%;;
+}
+
+.text{
+    margin-bottom: 40px;
+}
+/*----recommandations---*/
+.recommandations {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 30px
+}
+
+.seconde_section {
+    margin: auto;
+} 
+   
+/*------media_query_petit_ecran --------*/
+@media all and (max-width: 768px)
+{
+    #container {
+        
+        padding:auto ;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;   
+    }
+    
+    #left_part {
+        width: 100%;
+    }
+    
+    #right_part {
+        width: 100%;
+        margin: auto;
+        padding-left: 1%;
+        padding: auto;
+    }
+    
+    #main_right {
+        display: flex;
+        flex-direction: column; 
+        margin: auto;
+        padding-left: 
+    }
+    
+    .date {
+        color: beige;
+        background-color: grey;
+        width:100% ;
+        display: flex;
+        height: 50px;
+        margin: 20px 20px 20px 0px;
+        padding-top: 4px;
+   
+    }
+    
+    .description_right {
+        margin: 0px;
+    } 
+    
+    .text {
+        margin-bottom: 40px;
+    }
+    
+    section {
+        height: auto
+    }
+   

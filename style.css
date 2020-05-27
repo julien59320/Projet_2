@@ -44,7 +44,7 @@ body {
     flex-direction: column;
     background: rgb(98, 98, 98);
     border: 1px black solid;
-    width: 35%;
+    width: 33%;
 }
 /*-------------photo-----------*/
 #photo {
@@ -107,31 +107,39 @@ h3.tittle_left {
     word-wrap: break-word;
     height: 600px
 }
-
+/*-------------Parties icônes------------*/
 #icones {
-    height:184px ; 
-    display:flex;
-    flex-direction: row;
-    text-align: center;
-    ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:30px 65px 35px 65px;
+    
+    
+    
+
+    
+   
 }
 
 .icone {
-    border: 3px solid beige;
-    box-shadow: 1px 1px 10px;
+    height: 64px;
+    width: 64px;
+    border: 1px solid beige;
+    box-shadow: 3px 3px 10px 1px beige;
     border-radius: 50%;
-    padding: 3%;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 40px;
+   
+    
 }
-.icone:nth-child(2) {
-    margin-left: 15px;
-    margin-right: 15px;
-}
+
 /*-------------Partie_de_droite------------------*/
 #right_part {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 67%;
     padding-left: 5.37%;
     background-color: beige;
    

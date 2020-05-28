@@ -105,7 +105,7 @@ h3.tittle_left {
     margin-top: 35px;
     max-width:   80%;
     word-wrap: break-word;
-    height:550px;
+    height:750px;
 }
 /*-------------Parties icônes------------*/
 #icones {
@@ -147,8 +147,8 @@ h3.tittle_left {
 #name {
     display: flex;
     flex-direction: column;
-    margin-top: 62px;
-    margin-bottom: 100px;
+    margin-top: 117px;
+    margin-bottom: 140px;
     margin-right: 11.9%;
 }
 /*---partie_formation/expreriences-----*/

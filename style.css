@@ -9,7 +9,8 @@
     src: url(style/FiraSans-Book.otf);
 }
 p{
-    margin-top: 4px;
+    margin-top: 10px;
+    text-align: justify;
 }
 h2{
     font-size: 22px;
@@ -44,19 +45,18 @@ body {
     flex-direction: column;
     background: rgb(98, 98, 98);
     border: 1px black solid;
-    width: 33%;
+    width: 32.3%
 }
 /*-------------photo-----------*/
 #photo {
+    display: flex;
     text-align: center;
-    height: 328px;
 }
 
 img {
-    width:55%;
-    margin-top: 68px;
-    margin-bottom: 45px;
-    height: 216px;
+    width:50%;
+    margin-top: 63px;
+    margin-bottom: 40px;
     border-radius: 50%;
     box-shadow: 1px 1px 10px 10px beige ;
 }
@@ -66,7 +66,7 @@ section {
 }
 
 .adress {
-    height: 344px;
+    margin-bottom: 40px;
     margin-top: 12px;
 }
 
@@ -103,22 +103,16 @@ h3.tittle_left {
 .description_left {
     margin: 10%;
     margin-top: 35px;
-    width: 80%;
+    max-width:   80%;
     word-wrap: break-word;
-    height: 600px
+    height:600px;
 }
 /*-------------Parties icônes------------*/
 #icones {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding:30px 65px 35px 65px;
+    justify-content: space-around;
+    padding-top: 30px;
     
-    
-    
-
-    
-   
 }
 
 .icone {
@@ -131,29 +125,33 @@ h3.tittle_left {
     justify-content: center;
     align-items:center;
     font-size: 40px;
-   
-    
 }
 
-/*-------------Partie_de_droite------------------*/
+.icone:nth-child(1){
+    margin-left: 12%;
+}
+
+.icone:nth-child(3){
+    margin-right: 12%;
+}
+
+/*--------Partie_de_droite---------*/
 #right_part {
     display: flex;
     flex-direction: column;
-    width: 67%;
-    padding-left: 5.37%;
+    width: 67.7%;
+    padding-left: 5%;
     background-color: beige;
-   
-
 }
 /*----------Entête---------*/
 #name {
     display: flex;
     flex-direction: column;
     margin-top: 62px;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
     margin-right: 11.9%;
 }
-/*------partie_formation/expreriences----------*/
+/*---partie_formation/expreriences-----*/
 #icones_right {
     border-bottom: 2px solid grey;
     display:flex;
@@ -162,28 +160,26 @@ h3.tittle_left {
     opacity: 0.6;
     padding-bottom: 5px;
 }
+
 #tittle_right {
     display: flex;
     margin-left: 37px;
 }
 
 #main_right {
-    display: flex;
+    display: flex;   
 }
 
-
 .date {
-    height: 80px;
-    margin-top: 28px;
-    width: 30%;
+    margin-top: 50px;
+    height: 20%;
+    width: 35%;
 }
 
 .description_right {
-    margin-top: 40px;
-    margin-left: 4%;
+    margin-top: 50px;
     margin-right: 6%;
-    text-align: left;
-    width: 60%;;
+    width: 65%;   
 }
 
 .text{
@@ -191,23 +187,19 @@ h3.tittle_left {
 }
 /*----recommandations---*/
 .recommandations {
-    display:flex;
-    flex-direction: row;
-    padding-top: 40px;
-    margin-bottom: 10px
-
+    display: flex;
+    padding-top: 30px;
+    margin-bottom: 10px;
 }
 
 .seconde_section {
     margin: auto;
 } 
-   
-/*------media_query_petit_ecran --------*/
-@media all and (max-width: 992px)
-{
+
+@media screen and (max-width:980px) {
+/*------media_query_petit_ecran --------*/   
     #container {
-        
-        padding:auto ;
+        padding: auto;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;   
@@ -217,10 +209,14 @@ h3.tittle_left {
         width: 100%;
     }
     
+    #icones{
+        padding:3% 10%;
+    }
+    
     #right_part {
         width: 100%;
         margin: auto;
-        padding-left: 1%;
+        padding: 1%;
         padding: auto;
     }
     
@@ -239,11 +235,11 @@ h3.tittle_left {
         height: 50px;
         margin: 20px 20px 20px 0px;
         padding-top: 4px;
-   
     }
     
     .description_right {
         margin: 0px;
+        width: 100%;
     } 
     
     .text {
@@ -253,16 +249,28 @@ h3.tittle_left {
     section {
         height: auto;
     }
+    
+    .recommandations {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 10px;
+        padding-bottom: 20px;
+     }
+    
+}
+
+@media screen and (max-width:425px) {
     .recommandations {
         display: flex;
         flex-direction: column;
-        padding-top: 20px;
-         }
-    .seconde_section {
-        margin: 0px;
-        padding-top:20px;
-        margin-bottom: 20px;
-
-        
+        align-items: center;
     }
-   
+    .icone:nth-child(1){
+        margin: 0px;
+    }
+    .icone:nth-child(3){
+        margin: 0px;
+    }
+    
+  
+}

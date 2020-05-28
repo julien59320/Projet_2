@@ -3,10 +3,15 @@
     box-sizing: border-box;
     margin: 0px;
 }
-
 @font-face {
-    font-family: FiraSans-Book;
-    src: url(style/FiraSans-Book.otf);
+    font-family: "fira_sansbook";
+    src: url("Fonts/firasans-book-webfont.woff2") format("woff2"),
+         url("Fonts/firasans-book-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 }
 p{
     margin-top: 10px;
@@ -28,13 +33,11 @@ h3{
 h4 {
     opacity: 0.7;
 }
+/*-----ceci_est_mon_contenaire----------*/
 body {
     max-width: 1190px;
     margin: auto;
-    font-family:FiraSans-Book ;    
-}
-/*-----ceci_est_mon_contenaire----------*/
-#container {
+   font-family: "fira_sansbook"; 
     display: flex;
     flex-direction: row;
 }
@@ -105,7 +108,7 @@ h3.tittle_left {
     margin-top: 35px;
     max-width:   80%;
     word-wrap: break-word;
-    height:740px;
+    height:650px;
 }
 /*-------------Parties icônes------------*/
 #icones {
@@ -190,7 +193,7 @@ h3.tittle_left {
 .recommandations {
     display: flex;
     padding-top: 30px;
-    padding-bottom:  35px;
+    padding-bottom:  ;
 }
 
 .seconde_section {

@@ -12,7 +12,7 @@
 
 }
 
-}
+
 p{
     margin-top: 10px;
     text-align: justify;
@@ -108,15 +108,14 @@ h3.tittle_left {
     margin-top: 35px;
     max-width:   80%;
     word-wrap: break-word;
-    height:650px;
+    height:600px;
 }
 /*-------------Parties icônes------------*/
 #icones {
     display: flex;
     justify-content: space-around;
     padding-top: 30px;
-    padding-bottom: 40px;
-    
+    padding-bottom: 40px;   
 }
 
 .icone {
@@ -193,7 +192,7 @@ h3.tittle_left {
 .recommandations {
     display: flex;
     padding-top: 30px;
-    padding-bottom:  ;
+   ;
 }
 
 .seconde_section {
@@ -202,7 +201,7 @@ h3.tittle_left {
 
 @media screen and (max-width:980px) {
 /*------media_query_petit_ecran --------*/   
-    #container {
+    body {
         padding: auto;
         display: flex;
         flex-direction: column;

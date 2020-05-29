@@ -54,6 +54,7 @@ body {
 #photo {
     display: flex;
     text-align: center;
+    
 }
 
 img {
@@ -62,10 +63,6 @@ img {
     margin-bottom: 40px;
     border-radius: 50%;
     box-shadow: 1px 1px 10px 10px beige ;
-}
-
-section {
-    height: auto ;
 }
 
 .adress {
@@ -108,7 +105,7 @@ h3.tittle_left {
     margin-top: 35px;
     max-width:   80%;
     word-wrap: break-word;
-    height:625px;
+    height: 670px;
 }
 /*-------------Parties icônes------------*/
 #icones {
@@ -150,8 +147,8 @@ h3.tittle_left {
 header {
     display: flex;
     flex-direction: column;
-    margin-top: 117px;
-    margin-bottom: 140px;
+    margin-top: 110px;
+    margin-bottom: 100px;
     margin-right: 11.9%;
 }
 /*---partie_formation/expreriences-----*/
@@ -180,13 +177,13 @@ header {
 }
 
 .description_right {
-    margin-top: 50px;
+    margin-top: 40px;
     margin-right: 6%;
     width: 65%;   
 }
 
 .text{
-    margin-bottom: 40px;
+    margin-bottom: 65px;
 }
 /*----recommandations---*/
 .recommandations {

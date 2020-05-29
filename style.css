@@ -147,7 +147,7 @@ h3.tittle_left {
     background-color: beige;
 }
 /*----------Entête---------*/
-#name {
+header {
     display: flex;
     flex-direction: column;
     margin-top: 117px;
@@ -155,7 +155,7 @@ h3.tittle_left {
     margin-right: 11.9%;
 }
 /*---partie_formation/expreriences-----*/
-#icones_right {
+.icones_right {
     border-bottom: 2px solid grey;
     display:flex;
     font-size: 40px;
@@ -164,12 +164,12 @@ h3.tittle_left {
     padding-bottom: 5px;
 }
 
-#tittle_right {
+.tittle_right {
     display: flex;
     margin-left: 37px;
 }
 
-#main_right {
+.main_right {
     display: flex;   
 }
 
@@ -200,7 +200,7 @@ h3.tittle_left {
 } 
 
 @media screen and (max-width:980px) {
-/*------media_query_petit_ecran --------*/   
+/*------media_query_petit-ecran --------*/   
     body {
         padding: auto;
         display: flex;
@@ -223,7 +223,7 @@ h3.tittle_left {
         padding: auto;
     }
     
-    #main_right {
+    .main_right {
         display: flex;
         flex-direction: column; 
         margin: auto;

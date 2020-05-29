@@ -148,8 +148,7 @@ header {
     display: flex;
     flex-direction: column;
     margin-top: 110px;
-    margin-bottom: 100px;
-    margin-right: 11.9%;
+    margin-bottom: 135px;
 }
 /*---partie_formation/expreriences-----*/
 .icones_right {
@@ -177,13 +176,13 @@ header {
 }
 
 .description_right {
-    margin-top: 40px;
+    margin-top: 50px;
     margin-right: 6%;
     width: 65%;   
 }
 
 .text{
-    margin-bottom: 65px;
+    margin-bottom: 70px;
 }
 /*----recommandations---*/
 .recommandations {

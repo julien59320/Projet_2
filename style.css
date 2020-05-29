@@ -9,27 +9,28 @@
          url("Fonts/firasans-book-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
-
 }
-
 
 p{
     margin-top: 10px;
     text-align: justify;
 }
+
 h2{
     font-size: 22px;
 }
+
 h1 {
     font-size: 44px;
 }
 strong {
     color: rgb(98,98,98)
 }
+
 h3{
-    font-size: 22px;
-    
+    font-size: 22px;  
 }
+
 h4 {
     opacity: 0.7;
     margin-top: 10px;
@@ -74,23 +75,23 @@ li {
     margin-top: 20px;
     list-style-type: none;
 }
+
 a{ /* Liens par défaut (non survolés) */
    text-decoration: none;
    color: white;
    font-style: italic;
 }
+
 a:hover{ /* Apparence au survol des liens */
 
    text-decoration: underline;
    color: red;
 }
-git status
 
 em {
     text-decoration: underline;
     opacity: 0.8;
-    
-    
+    margin-bottom: 10px;    
 }
 
 h3.tittle_left {
@@ -180,15 +181,15 @@ header {
 }
 .fa-dot-circle{
     padding-right: 20px;
-    color: rgb(98,98,98);
-    
-    
+    color: rgb(98,98,98);  
 }
+
 .fa-circle{
     padding-right: 20px;
     color: rgb(98,98,98);
     font-size: 10px;
 }
+
 .description_right {
     margin-top: 50px;
     margin-right: 6%;
@@ -202,7 +203,6 @@ header {
 .recommandations {
     display: flex;
     padding-top: 30px;
-   ;
 }
 
 .seconde_section {
@@ -235,8 +235,7 @@ header {
     .main_right {
         display: flex;
         flex-direction: column; 
-        margin: auto;
-        
+        margin: auto; 
     }
    
     .date {
@@ -263,15 +262,12 @@ header {
      }
     .fa-dot-circle{
        margin-left: 10px;
-        color: beige;
-    
-    
-}
-.fa-circle{
+        color: beige;   
+    }
+    .fa-circle{
        margin-left: 10px;
         color: beige;
-    
-}
+    }
 }
 
 @media screen and (max-width:425px) {

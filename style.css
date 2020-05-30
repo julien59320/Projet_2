@@ -41,7 +41,7 @@ body {
     margin: auto;
    font-family: "fira_sansbook"; 
     display: flex;
-    flex-direction: row;
+    flex-direction: ;
 }
 /*-------------Partie_de_gauche------------------*/
 #left_part {
@@ -53,9 +53,10 @@ body {
     width: 32.3%
 }
 /*-------------photo-----------*/
-#photo {
-    display: flex;
-    text-align: center;
+.photo {
+   display: flex;
+    text-align: center;  
+    
 }
 
 img {
@@ -64,6 +65,7 @@ img {
     margin-bottom: 40px;
     border-radius: 50%;
     box-shadow: 1px 1px 10px 10px beige ;
+    
 }
 
 .adress {
@@ -112,7 +114,7 @@ h3.tittle_left {
     height: 670px;
 }
 /*-------------Parties icônes------------*/
-#icones {
+aside {
     display: flex;
     justify-content: space-around;
     padding-top: 30px;

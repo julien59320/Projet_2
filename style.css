@@ -233,24 +233,18 @@ header {
         padding: 0px;
     }
  
-    #icones{
-        padding:3% 10%;
-    }
-    
-    .right_part {
+    right_part {
         width: 100%;
         margin: auto;
         padding: 1%;
     } 
     
     header {
-                
-
+        
         margin-top: 20px;
         margin-bottom: 40px;
         text-align: center;
-        
-        
+       
     }
     
     .main_right {

@@ -24,7 +24,7 @@ h1 {
     font-size: 44px;
 }
 strong {
-    color: rgb(98,98,98)
+    color: rgb(98,98,98);
 }
 
 h3{
@@ -35,16 +35,19 @@ h4 {
     opacity: 0.7;
     margin-top: 10px;
 }
+span {
+    border-bottom: 3px solid rgb(98,98,98);
+    text-decoration-color: rgb(98,98,98);
+}
 /*-----ceci_est_mon_contenaire----------*/
 body {
     max-width: 1190px;
     margin: auto;
    font-family: "fira_sansbook"; 
     display: flex;
-    flex-direction: ;
 }
 /*-------------Partie_de_gauche------------------*/
-#left_part {
+.left_part {
     color: white;
     display: flex;
     flex-direction: column;
@@ -54,9 +57,7 @@ body {
 }
 /*-------------photo-----------*/
 .photo {
-   display: flex;
-    text-align: center;  
-    
+    text-align: center;
 }
 
 img {
@@ -66,9 +67,10 @@ img {
     border-radius: 50%;
     box-shadow: 1px 1px 10px 10px beige ;
     
+    
 }
 
-.adress {
+nav {
     margin-bottom: 40px;
     margin-top: 12px;
 }
@@ -76,6 +78,7 @@ img {
 li {
     margin-top: 20px;
     list-style-type: none;
+    
 }
 
 a{ /* Liens par défaut (non survolés) */
@@ -85,15 +88,13 @@ a{ /* Liens par défaut (non survolés) */
 }
 
 a:hover{ /* Apparence au survol des liens */
-
-   text-decoration: underline;
    color: red;
+    text-decoration: underline
 }
 
 em {
-    text-decoration: underline;
     opacity: 0.8;
-    margin-bottom: 10px;    
+    line-height: 10px;
 }
 
 h3.tittle_left {
@@ -142,7 +143,7 @@ aside {
 }
 
 /*--------Partie_de_droite---------*/
-#right_part {
+.right_part {
     display: flex;
     flex-direction: column;
     width: 67.7%;
@@ -156,6 +157,7 @@ header {
     margin-top: 110px;
     margin-bottom: 135px;
 }
+
 /*---partie_formation/expreriences-----*/
 .icones_right {
     border-bottom: 2px solid grey;
@@ -211,26 +213,43 @@ header {
     margin: auto;
 } 
 
-@media screen and (max-width:980px) {
+@media screen and (max-width:768px) {
 /*------media_query_petit-ecran --------*/   
     body {
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;   
+        flex-direction: column  
     }
-    
-    #left_part {
+   
+    .left_part {
         width: 100%;
     }
     
+    .description_left{
+        height: auto;
+    }
+    
+    ul {
+        text-align: center;
+        padding: 0px;
+    }
+ 
     #icones{
         padding:3% 10%;
     }
     
-    #right_part {
+    .right_part {
         width: 100%;
         margin: auto;
         padding: 1%;
+    } 
+    
+    header {
+                
+
+        margin-top: 20px;
+        margin-bottom: 40px;
+        text-align: center;
+        
         
     }
     
@@ -244,7 +263,6 @@ header {
         color: beige;
         background-color: grey;
         width:100% ;
-        display: flex;
         height: 50px;
         margin: 20px 20px 20px 0px;
         padding-top: 10px;
@@ -259,8 +277,6 @@ header {
         margin-bottom: 40px;
     }
     
-    .recommandations {
-        margin-bottom: 30px;
      }
     .fa-dot-circle{
        margin-left: 10px;
@@ -270,6 +286,8 @@ header {
        margin-left: 10px;
         color: beige;
     }
+    .recommandations {
+        margin-bottom: 30px;
 }
 
 @media screen and (max-width:425px) {
@@ -278,10 +296,7 @@ header {
         flex-direction: column;
         align-items: center;
     }
-    .icone:nth-child(1){
-        margin: 0px;
+    .seconde_section {
+        margin-top: 10px;
     }
-    .icone:nth-child(3){
-        margin: 0px;
-    } 
-}
+  

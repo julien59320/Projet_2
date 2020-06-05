@@ -21,8 +21,9 @@ h2{
 }
 
 h1 {
-    font-size: 44px;
+    font-size: 50px ;
 }
+
 strong {
     color: rgb(98,98,98);
 }
@@ -35,17 +36,54 @@ h4 {
     opacity: 0.7;
     margin-top: 10px;
 }
+
 span {
     border-bottom: 3px solid rgb(98,98,98);
     text-decoration-color: rgb(98,98,98);
 }
-/*-----ceci_est_mon_contenaire----------*/
+/*-----ceci_est_mon_contenaire-----*/
 body {
     max-width: 1190px;
     margin: auto;
    font-family: "fira_sansbook"; 
     display: flex;
+    flex-direction: column;
 }
+
+/*----------Entête---------*/
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: beige; 
+}
+
+.Nom{
+    margin-top: 110px;
+    margin-bottom: 120px;
+    padding-left:  5%;
+    width: 67.7%
+}
+
+/*-------------photo-----------*/
+.photo {
+    text-align: center;
+    width: 32.3%;
+    background-color: rgb(98,98,98)
+}
+
+img {
+    width: 210px;
+    height: 210px;
+    margin-top: 63px;
+    margin-bottom: 40px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px 10px beige ;   
+}
+
+#container {
+    display: flex;
+}
+
 /*-------------Partie_de_gauche------------------*/
 .left_part {
     color: white;
@@ -54,20 +92,6 @@ body {
     background: rgb(98, 98, 98);
     border: 1px black solid;
     width: 32.3%
-}
-/*-------------photo-----------*/
-.photo {
-    text-align: center;
-}
-
-img {
-    width:50%;
-    margin-top: 63px;
-    margin-bottom: 40px;
-    border-radius: 50%;
-    box-shadow: 1px 1px 10px 10px beige ;
-    
-    
 }
 
 nav {
@@ -150,13 +174,7 @@ aside {
     padding-left: 5%;
     background-color: beige;
 }
-/*----------Entête---------*/
-header {
-    display: flex;
-    flex-direction: column;
-    margin-top: 110px;
-    margin-bottom: 135px;
-}
+
 
 /*---partie_formation/expreriences-----*/
 .icones_right {
@@ -183,14 +201,11 @@ header {
     height: 20%;
     width: 35%;
 }
-.fa-dot-circle{
+.fa-dot-circle {
     padding-right: 20px;
-    color: rgb(98,98,98);  
 }
-
 .fa-circle{
-    padding-right: 20px;
-    color: rgb(98,98,98);
+    padding-right: 10px;
     font-size: 10px;
 }
 
@@ -219,9 +234,42 @@ header {
         display: flex;
         flex-direction: column  
     }
-   
-    .left_part {
+    
+    #container{
+        display: flex;
+        flex-direction: column;
+    }
+    /*---ceci-est-mon-header---*/
+    
+    header {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(98,98,98);   
+    }
+    
+    strong {
+        color: beige
+    }
+    
+    .photo{
         width: 100%;
+        order:2 ;
+        margin: auto;
+    }
+    
+    img{
+        margin-top: 20px
+    }
+   
+    .Nom{
+        order:1;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    /*---partie-de-droite---*/
+    .left_part {
+        width: 100%; 
     }
     
     .description_left{
@@ -232,7 +280,7 @@ header {
         text-align: center;
         padding: 0px;
     }
- 
+     /*---partie-de-gauche----*/
     .right_part {
         width: 100%;
         margin: auto;
@@ -240,25 +288,23 @@ header {
     } 
     
     header {
-        
-        margin-top: 20px;
-        margin-bottom: 40px;
-        text-align: center;
-       
+         text-align: center;
     }
     
     .main_right {
+
         display: flex;
         flex-direction: column; 
         margin: auto; 
     }
    
     .date {
+        margin: 10px 0px;
+        padding-left: 20px;
         color: beige;
         background-color: grey;
         width:100% ;
         height: 50px;
-        margin: 20px 20px 20px 0px;
         padding-top: 10px;
     }
     
@@ -270,16 +316,7 @@ header {
     .text {
         margin-bottom: 40px;
     }
-    
-     }
-    .fa-dot-circle{
-       margin-left: 10px;
-        color: beige;   
-    }
-    .fa-circle{
-       margin-left: 10px;
-        color: beige;
-    }
+    /*----footer----*/
     .recommandations {
         margin-bottom: 30px;
 }

@@ -79,7 +79,7 @@ img {
     box-shadow: 1px 1px 10px 10px beige ;   
 }
 
-#container {
+section {
     display: flex;
 }
 
@@ -135,9 +135,6 @@ h3.tittle_left {
     word-wrap: break-word;
     height: 670px;
 }
-{
-    margin-top: 20px;
-}
 /*-------------Parties icônes------------*/
 aside {
     display: flex;
@@ -177,7 +174,7 @@ aside {
 
 
 /*---partie_formation/expreriences-----*/
-.icones_right {
+.categorie_right {
     border-bottom: 2px solid grey;
     display:flex;
     font-size: 40px;
@@ -244,18 +241,18 @@ aside {
 /*------media_query_petit-ecran --------*/   
     body {
         display: flex;
-        flex-direction: column  
-    }
-    h2{
-        text-align: center;
+        flex-direction: column;
     }
     
-    #container{
+    h2{
+        margin: auto;
+    }
+    
+    section {
         display: flex;
         flex-direction: column;
     }
     /*---ceci-est-mon-header---*/
-    
     header {
         display: flex;
         flex-direction: column;
@@ -284,7 +281,7 @@ aside {
     }
     /*---partie-de-droite---*/
     .left_part {
-        width: 100%; 
+        width: 100%;
     }
     
     .description_left{
@@ -298,8 +295,7 @@ aside {
      /*---partie-de-gauche----*/
     .right_part {
         width: 100%;
-        margin: auto;
-        padding: 1%;
+        padding: 0px;
     } 
     
     header {
@@ -307,48 +303,67 @@ aside {
     }
     
     .fa-dot-circle {
-        padding-top: 8px;
+        visibility: hidden;
+        padding: 0px;
+        width: 0px;
     }
     
     .fa-circle{
-        padding-top: 8px;
+        visibility: hidden;
+        padding: 0px;
+        width: 0px
+    }
+    
+    .categorie_right{
+        margin: auto;
+        align-items: center;
+    }
+    h2{
+        font-size: 22px
     }
     
     .main_right {
-
         display: flex;
         flex-direction: column; 
         margin: auto; 
     }
    
     .date {
-        margin: 10px 0px;
-        padding-left: 20px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin:  10px 0px;
         color: beige;
         background-color: grey;
         width:100% ;
         height: 50px;
-        padding-top: 10px;
     }
     
     .description_right {
         margin: 0px;
         width: 100%;
+        text-align: center;
     } 
     
     .text {
         margin-bottom: 40px;
     }
     /*----footer----*/
+    footer{
+        text-align: center;
+    }
+    
     .recommandations {
-        margin-bottom: 30px;
-}
-
+        margin-bottom:30px;
+        padding-left: 12%;
+    }
+    
 @media screen and (max-width:425px) {
     .recommandations {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-left: 0px;
     }
     .seconde_section {
         margin-top: 10px;

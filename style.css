@@ -322,7 +322,7 @@ article{
         font-size: 22px
     }
     
-    .main_right {
+    article {
         display: flex;
         flex-direction: column; 
         margin: auto; 

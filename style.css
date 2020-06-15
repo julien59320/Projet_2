@@ -100,7 +100,6 @@ nav {
 li {
     margin-top: 20px;
     list-style-type: none;
-    
 }
 
 a{ /* Liens par défaut (non survolés) */
@@ -110,7 +109,7 @@ a{ /* Liens par défaut (non survolés) */
 }
 
 a:hover{ /* Apparence au survol des liens */
-   color: red;
+    color: red;
     text-decoration: underline
 }
 
@@ -357,7 +356,7 @@ article{
         margin-bottom:30px;
         padding-left: 12%;
     }
-    
+}
 @media screen and (max-width:425px) {
     .recommandations {
         display: flex;
@@ -368,3 +367,4 @@ article{
     .seconde_section {
         margin-top: 10px;
     }
+}

@@ -316,6 +316,7 @@ article{
     .categorie_right{
         margin: auto;
         align-items: center;
+        margin: 1rem;
     }
     h2{
         font-size: 22px
